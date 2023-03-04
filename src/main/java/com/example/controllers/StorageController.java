@@ -15,7 +15,7 @@ import java.util.List;
 @RequestMapping("/storage")
 public class StorageController {
 
-    StorageService storageService;
+    private StorageService storageService;
 
     TransactionsService transactionsService;
 

@@ -15,7 +15,7 @@ public interface StorageService {
 
     void addSocksInStorage(Socks socks) throws QuantityException;
 
-    abstract List<Socks> obtainAllSocks();
+    List<Socks> obtainAllSocks();
 
     Map<Integer, Socks> obtainMapAllSocks();
 

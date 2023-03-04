@@ -49,15 +49,15 @@ public class TransactionsServiceImpl implements TransactionsService {
     public void addTransactions(TypeTransaction typeTransaction, int socksQuantity,
                                 Size size, int cotton, Color color) {
 
-        transactionsMap.put(counter, new Transaction.TransactionBuilder().
-                typeTransaction(typeTransaction).
-                iD(counter++).
-                createTime(LocalDateTime.now()).
-                cotton(cotton).
-                size(size).
-                color(color).
-                socksQuantity(socksQuantity).
-                build());
+        transactionsMap.put(counter, new Transaction.TransactionBuilder()
+                .typeTransaction(typeTransaction)
+                .iD(counter++)
+                .createTime(LocalDateTime.now())
+                .cotton(cotton)
+                .size(size)
+                .color(color)
+                .socksQuantity(socksQuantity)
+                .build());
         fileService.saveToFile(fileTransactionName, transactionsMap);
         System.out.println("Транзакция № " + (counter - 1) + " добавлена");
     }

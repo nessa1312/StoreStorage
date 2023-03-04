@@ -35,7 +35,7 @@ public class StorageServiceImpl implements StorageService {
     @Value("${path.to.file.folder}")
     private String filePath;
 
-    Map<Integer, Socks> storage = new HashMap<>();
+    private Map<Integer, Socks> storage = new HashMap<>();
 
     @PostConstruct
     @Override

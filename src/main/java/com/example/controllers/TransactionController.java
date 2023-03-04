@@ -14,7 +14,7 @@ import java.util.List;
 @RequestMapping("/transaction")
 public class TransactionsController {
 
-    TransactionsService transactionsService;
+    private TransactionsService transactionsService;
 
     public TransactionsController(TransactionsService transactionsService) {
         this.transactionsService = transactionsService;

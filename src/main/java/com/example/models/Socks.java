@@ -12,9 +12,9 @@ import java.util.Objects;
 @NoArgsConstructor
 public class Socks {
 
-    Size size;
+    private Size size;
 
-    Color color;
+    private Color color;
 
     @Max(value = 100, message = "Не может быть больше 100")
     @Positive(message = "Не может быть отрицательным")
